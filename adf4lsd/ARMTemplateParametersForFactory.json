@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf4lsd"
+		},
+		"LinkService_DataBase_Source_password": {
+			"value": ""
+		},
+		"LinkService_Storage_Sink_accountKey": {
+			"value": ""
+		},
+		"LinkService_DataBase_Source_properties_typeProperties_server": {
+			"value": "lsdeh-server.database.windows.net"
+		},
+		"LinkService_DataBase_Source_properties_typeProperties_database": {
+			"value": "OrdersDB"
+		},
+		"LinkService_DataBase_Source_properties_typeProperties_userName": {
+			"value": "adminfarhan"
+		},
+		"LinkService_Storage_Sink_properties_typeProperties_url": {
+			"value": "https://sa4adflsd.dfs.core.windows.net/"
+		}
+	}
+}
