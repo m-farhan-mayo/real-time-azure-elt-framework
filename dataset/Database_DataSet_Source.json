@@ -1,0 +1,17 @@
+{
+	"name": "Database_DataSet_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkService_DataBase_Source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Orders"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

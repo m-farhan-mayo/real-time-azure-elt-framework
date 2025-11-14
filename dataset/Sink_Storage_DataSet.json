@@ -1,0 +1,21 @@
+{
+	"name": "Sink_Storage_DataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkService_Storage_Sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

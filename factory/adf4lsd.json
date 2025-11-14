@@ -1,0 +1,9 @@
+{
+	"name": "adf4lsd",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fff27261-935f-494a-a6f2-39a3e743da36",
+		"tenantId": "83efc3b4-39a2-4dec-a3c2-b8f7be8f7a28"
+	}
+}

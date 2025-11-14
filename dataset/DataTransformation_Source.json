@@ -1,0 +1,35 @@
+{
+	"name": "DataTransformation_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkService_Storage_Sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.Orders.parquet",
+				"folderPath": "data",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "INT32"
+			},
+			{
+				"name": "amount",
+				"type": "INT32"
+			},
+			{
+				"name": "event_time",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
